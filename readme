@@ -1,0 +1,68 @@
+Favorite Movies List – PHP & MySQL Assignment
+
+This project is a dynamic web application built using **PHP**, **MySQL**, and **HTML/CSS**. It displays a styled list of favorite movies stored in a MySQL database and dynamically rendered using PHP loops and logic. 
+
+Fulfills all requirements of "Assignment 1 - PHP and MySQL".
+
+Features
+
+- Connects to a MySQL database using PHP
+- Displays data dynamically using loops
+- Conditional styling using PHP if/else logic
+- Responsive and styled layout using HTML & CSS
+- W3C-validated HTML5 and CSS3
+
+
+Setup Instructions
+
+> Prerequisites:
+- [XAMPP](https://www.apachefriends.org/) (or any LAMP stack)
+- PHP 7+
+- MySQL
+- Web browser
+- Git (optional, for pulling repo)
+
+---
+
+### Start Apache and MySQL
+- Open **XAMPP Control Panel**
+- Click **Start** for both **Apache** and **MySQL**
+
+---
+
+### Import the Database
+
+1. Open [http://localhost/phpmyadmin](http://localhost/phpmyadmin)
+2. Create a new database named:
+
+
+
+3. Run the following SQL to create the table and insert data:
+
+```sql
+CREATE TABLE movies (
+id INT AUTO_INCREMENT PRIMARY KEY,
+title VARCHAR(100) NOT NULL,
+genre VARCHAR(50),
+rating FLOAT,
+release_date DATE,
+poster_url TEXT
+);
+
+INSERT INTO movies (title, genre, rating, release_date, poster_url) VALUES
+('Inception', 'Sci-Fi', 9.0, '2010-07-16', 'inception.jpg'),
+('Interstellar', 'Adventure', 8.6, '2014-11-07', 'interstellar.jpg'),
+('Titanic', 'Romance', 7.8, '1997-12-19', 'titanic.jpg'),
+('The Matrix', 'Action', 8.7, '1999-03-31', 'matrix.jpg'),
+('Avatar', 'Fantasy', 7.9, '2009-12-18', 'avatar.jpg');
+
+
+
+
+C:/xampp/htdocs/assignment1/
+
+index.php
+
+
+Open a browser and visit:
+http://localhost/assignment1/
